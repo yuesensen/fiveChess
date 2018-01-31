@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>五子棋大战</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<canvas id="chess" width="450px" height="450px">
+		<!--如果浏览器不支持则显示如下字体-->
+		提示：你的浏览器不支持标签
+	</canvas>
+	<div class="operate" align="right">
+		难度值：
+		<select id="level" onchange="selectLevel(this.value)">
+			<option value="1">简单</option>
+			<option value="2">中等</option>
+			<option value="3">困难</option>
+		</select>
+		<input type="button" value="悔棋" onclick="backStep()"/>
+		<input type="button" value="重新来过" onclick="replay()"/>
+	</div>
+	<script type="text/javascript" src="script/script.js"></script>
+</body>
+</html>
