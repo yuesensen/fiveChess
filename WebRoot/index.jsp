@@ -23,5 +23,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <body>
     <a href="#">测试</a>
 	  浏览器视图加入内容
+	  测试两方不统一
   </body>
 </html>
